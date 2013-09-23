@@ -7,15 +7,14 @@ stylistic problems, including:
   * No class or method level JavaDocs.
   * Inconsistent indentation.
   * Test code is located in the default package.
-  * View template names (*.scala.html) should follow Java class naming conventions since they compile into 
-    Java classes. Thus, index.scala.html is renamed to Index.scala.html, and main.scala.html is renamed to
-    Main.scala.html.
+  * View template names (index.scala.html and main.scala.html) compile into Java classes
+    that violate best practices (i.e. capitalization) for Java class names.
   
 When such an application is processed using Checkstyle with a reasonable ruleset, 
 approximately 50 warnings are generated.
 
-Play-new-passcheckstyle implements a revised version of the default Java Play application, with all of
-those warnings removed.  
+Play-new-passcheckstyle implements a revised version of the default Java Play application
+that does not generate any checkstyle warnings and better conforms to Java best practices. 
 
 You can use the "diff" feature of GitHub to figure out exactly what changes were made.
 
