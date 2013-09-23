@@ -41,6 +41,9 @@ stylistic problems, including:</p>
 <li>No class or method level JavaDocs.</li>
 <li>Inconsistent indentation.</li>
 <li>Test code is located in the default package.</li>
+<li>View template names (*.scala.html) should follow Java class naming conventions since they compile into 
+Java classes. Thus, index.scala.html is renamed to Index.scala.html, and main.scala.html is renamed to
+Main.scala.html.</li>
 </ul><p>When such an application is processed using Checkstyle with a reasonable ruleset, 
 approximately 50 warnings are generated.</p>
 
